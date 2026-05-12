@@ -184,20 +184,7 @@ ul { list-style: none; }
   object-fit: cover;
 }
 
-.badge {
-  position: absolute;
-  bottom: -20px;
-  right: -20px;
-  background: var(--secundaria);
-  color: var(--branco);
-  padding: 16px 22px;
-  border-radius: 14px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
-  text-align: center;
-}
 
-.badge strong { display: block; font-size: 2rem; line-height: 1; }
-.badge small  { font-size: 0.78rem; }
 
 /* =========================================
    SERVIÇOS  (index.html)
