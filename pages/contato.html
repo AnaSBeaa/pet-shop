@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PetShop Amigo — Contato</title>
+  <link rel="stylesheet" href="../src/css/estilo.css" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="../index.html" class="logo"><i data-lucide="paw-print"></i> PetShop <span>Amigo</span></a>
+
+      <button class="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="portfolio.html">Portfólio</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== CABEÇALHO ===== -->
+  <div class="pagina-header">
+    <h1>Entre em Contato</h1>
+    <p>Estamos prontos para atender você e seu pet</p>
+  </div>
+
+  <!-- ===== CARDS DE INFORMAÇÃO ===== -->
+  <div class="info-contato">
+
+    <div class="card-info">
+      <div class="icone-info cor-ciano-bg" style="color:#06B6D4;"><i data-lucide="phone"></i></div>
+      <h3>Telefone</h3>
+      <a>(11) 98765-4321</a>
+    </div>
+
+    <div class="card-info">
+      <div class="icone-info cor-laranja-bg" style="color:#FB923C;"><i data-lucide="mail"></i></div>
+      <h3>Email</h3>
+      <a>contato@petshopamiigo.com.br</a>
+    </div>
+
+    <div class="card-info">
+      <div class="icone-info cor-verde-bg" style="color:#10B981;"><i data-lucide="map-pin"></i></div>
+      <h3>Endereço</h3>
+      <p>Rua dos Pets, 123 — São Paulo, SP</p>
+    </div>
+
+    <div class="card-info">
+      <div class="icone-info cor-roxo-bg" style="color:#8B5CF6;"><i data-lucide="clock"></i></div>
+      <h3>Horário</h3>
+      <p>Seg–Sex: 8h–18h | Sáb: 8h–14h</p>
+    </div>
+
+  </div>
+
+  <!-- ===== FORMULÁRIO + MAPA ===== -->
+  <div class="contato-grid">
+
+    <!-- Formulário -->
+    <div class="form-wrapper">
+      <h2>Envie sua Mensagem</h2>
+
+      <!-- Mensagem de sucesso (oculta por padrão) -->
+      <div id="msg-sucesso" class="msg-sucesso">
+        <div class="emoji"><i data-lucide="check-circle" style="width:48px;height:48px;color:#10B981;"></i></div>
+        <h3>Mensagem Enviada!</h3>
+        <p>Obrigado pelo contato. Retornaremos em breve!</p>
+      </div>
+
+      <!-- Formulário -->
+      <form id="form-contato">
+
+        <div class="form-grupo">
+          <label for="nome">Seu Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required />
+        </div>
+
+        <div class="form-linha">
+          <div class="form-grupo">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+          </div>
+          <div class="form-grupo">
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(11) 98765-4321" required />
+          </div>
+        </div>
+
+        <div class="form-linha">
+          <div class="form-grupo">
+            <label for="pet">Nome do Pet</label>
+            <input type="text" id="pet" name="pet" placeholder="Nome do seu pet" />
+          </div>
+          <div class="form-grupo">
+            <label for="servico">Serviço</label>
+            <select id="servico" name="servico">
+              <option value="">Selecione um serviço</option>
+              <option value="banho-tosa">Banho e Tosa</option>
+              <option value="veterinario">Consulta Veterinária</option>
+              <option value="hidratacao">Hidratação</option>
+              <option value="hotel">Hotel para Pets</option>
+              <option value="outro">Outro</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-grupo">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-enviar"><i data-lucide="send"></i> Enviar Mensagem</button>
+
+      </form>
+    </div>
+
+    <!-- Mapa placeholder -->
+    <div class="mapa-wrapper">
+      <div class="mapa-conteudo">
+        <div class="emoji-mapa"><i data-lucide="map" style="width:56px;height:56px;color:#06B6D4;"></i></div>
+        <h3>Localização</h3>
+        <p>
+          Rua dos Pets, 123<br />
+          Bairro Pet Friendly — São Paulo, SP<br />
+          CEP: 01234-567
+        </p>
+        <a class="btn-mapa">Abrir no Google Maps</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+      <div class="footer-inner">
+
+    <div class="footer-col footer-brand">
+      <div class="footer-logo"><i data-lucide="paw-print"></i> PetShop Amigo</div>
+      <p>Cuidando do seu melhor amigo com carinho e profissionalismo desde 2010.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Links Rápidos</h4>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./portfolio.html">Portfólio</a></li>
+        <li><a href="./sobre.html">Sobre</a></li>
+        <li><a href="./contato.html">Contato</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contato</h4>
+      <ul>
+        <li><i data-lucide="phone"></i> (11) 98765-4321</li>
+        <li><i data-lucide="mail"></i> contato@petshopamiigo.com.br</li>
+      </ul>
+    </div>
+
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 PetShop Amigo. Todos os direitos reservados.</p>
+  </div>
+  </footer>
+
+  <script src="../src/js/script.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>
