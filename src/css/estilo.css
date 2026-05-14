@@ -892,3 +892,73 @@ ul {
     grid-template-columns: repeat(2, 1fr); 
   }
 }
+
+/* =========================================
+   ÍCONES LUCIDE
+   ========================================= */
+[data-lucide] {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.icone-servico [data-lucide],
+.icone-valor [data-lucide],
+.icone-info [data-lucide] {
+  width: 26px;
+  height: 26px;
+  stroke-width: 2;
+}
+
+.icone-servico [data-lucide] { color: white; }
+.icone-valor   [data-lucide] { color: inherit; }
+.icone-info    [data-lucide] { color: inherit; }
+
+.logo [data-lucide] {
+  width: 22px;
+  height: 22px;
+  color: var(--primaria);
+  vertical-align: middle;
+}
+
+.btn [data-lucide] {
+  width: 16px;
+  height: 16px;
+}
+
+/* =========================================
+   COR DOS ÍCONES (usando emojis ou classes)
+   ========================================= */
+.cor-ciano { 
+  background-color: var(--primaria);   
+}
+
+.cor-laranja {
+  background-color: var(--secundaria); 
+}
+
+.cor-verde { 
+  background-color: var(--acento);     
+}
+
+.cor-roxo { 
+  background-color: var(--roxo);       
+}
+
+.cor-ciano-bg   { 
+  background-color: rgba(6,182,212,0.15);   
+}
+
+.cor-laranja-bg {
+  background-color: rgba(251,146,60,0.15);  
+}
+
+.cor-verde-bg { 
+  background-color: rgba(16,185,129,0.15);  
+}
+
+.cor-roxo-bg { 
+  background-color: rgba(139,92,246,0.15); 
+}
