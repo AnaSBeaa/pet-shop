@@ -1,0 +1,15 @@
+/* =========================================
+--- Variáveis de cor ---
+========================================= */
+:root {
+  --bg:        #FEF9F3;
+  --branco:    #FFFFFF;
+  --texto:     #1E293B;
+  --subtexto:  #64748B;
+  --borda:     #E2E8F0;
+  --primaria:  #06B6D4;   /* ciano */
+  --secundaria:#FB923C;   /* laranja */
+  --acento:    #10B981;   /* verde */
+  --roxo:      #8B5CF6;
+  --radius:    12px;
+}
