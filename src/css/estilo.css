@@ -13,3 +13,97 @@
   --roxo:      #8B5CF6;
   --radius:    12px;
 }
+
+/* =========================================
+ --- Reset básico --- 
+========================================= */
+*, *::before, *::after {
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg);
+  color: var(--texto);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%; 
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* =========================================
+/* Menu hamburguer (mobile)
+========================================= */
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--texto);
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+/* =========================================
+  BOTÕES 
+  =========================================*/
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: var(--radius);
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-primario   {
+  background: var(--primaria);   
+  color: var(--branco);
+}
+.btn-primario:hover {
+  background: #0891B2;
+}
+
+.btn-contorno {
+  background: var(--branco);
+  color: var(--primaria);
+  border-color: var(--primaria);
+}
+.btn-contorno:hover {
+  background: rgba(6,182,212,0.05);
+}
+
+.btn-branco {
+  background: var(--branco); color: var(--primaria);
+}
+
+.btn-branco:hover {
+  background: rgba(255,255,255,0.9);
+}
