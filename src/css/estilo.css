@@ -107,3 +107,66 @@ ul {
 .btn-branco:hover {
   background: rgba(255,255,255,0.9);
 }
+
+/* =========================================
+   HERO  (index.html)
+   ========================================= */
+.hero {
+  background: linear-gradient(135deg,
+    rgba(6,182,212,0.1) 0%,
+    rgba(251,146,60,0.1) 50%,
+    rgba(16,185,129,0.1) 100%);
+  padding: 80px 20px;
+}
+
+.hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.hero-texto h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.hero-texto h1 .destaque {
+  color: var(--primaria);
+}
+
+.hero-texto p {
+  font-size: 1.1rem;
+  color: var(--subtexto);
+  margin-bottom: 28px;
+}
+
+.hero-botoes {
+  display: flex; 
+  gap: 12px; 
+  flex-wrap: wrap;
+}
+
+/* =========================================
+ Imagem hero 
+========================================= */
+.hero-img-wrapper {
+  position: relative;
+}
+
+.hero-img-borda {
+  background: linear-gradient(135deg, var(--primaria), var(--secundaria), var(--acento));
+  padding: 4px;
+  border-radius: 28px;
+}
+
+.hero-img-borda img {
+  border-radius: 24px;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
